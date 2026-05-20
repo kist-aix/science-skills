@@ -22,7 +22,7 @@ Install the Science Skills bundle via
 [npx](https://docs.npmjs.com/cli/commands/npx) using:
 
 ```bash
-npx skill add google-deepmind/science-skills/
+npx skills add google-deepmind/science-skills/
 ```
 
 ## Using science skills with [Google Antigravity](https://antigravity.google/)
