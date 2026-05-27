@@ -929,7 +929,8 @@ def _dispatch(args: argparse.Namespace) -> None:
   accept = cfg.get("accept", "application/json")
   if handler == "binary" and accept == "application/json":
     ext = getattr(args, "format", "png") or "png"
-    accept = f"image/{ext}"
+    mime_map = {"svg": "image/svg+xml", "jpg": "image/jpeg"}
+    accept = mime_map.get(ext, f"image/{ext}")
   headers = {
       "Content-Type": content_type,
       "Accept": accept,
