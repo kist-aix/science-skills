@@ -1,5 +1,5 @@
 [project]
-name = "science-skills-common"
+name = "scienceskillscommon"
 version = "0.1.0"
 
 [build-system]
@@ -10,4 +10,4 @@ build-backend = "hatchling.build"
 packages = ["."]
 
 [tool.hatch.build.targets.wheel.sources]
-"." = "science_skills/science_skills_common"
+"." = "science_skills/scienceskillscommon"

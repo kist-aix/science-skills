@@ -20,10 +20,10 @@ Follows HPA Terms of Use by fetching sequentially and handling requests.
 # /// script
 # requires-python = ">=3.10"
 # dependencies = [
-#   "science-skills-common",
+#   "scienceskillscommon",
 # ]
 # [tool.uv.sources]
-# science-skills-common = { path = "../../science_skills_common" }
+# scienceskillscommon = { path = "../../scienceskillscommon" }
 # ///
 
 import argparse
@@ -32,7 +32,7 @@ import sys
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-from science_skills.science_skills_common import http_client
+from science_skills.scienceskillscommon import http_client
 
 BASE_URL = 'https://www.proteinatlas.org/'
 CLIENT = http_client.HttpClient(BASE_URL, qps=2.0)
